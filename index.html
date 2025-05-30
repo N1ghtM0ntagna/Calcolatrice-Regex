@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="4"><input type="text" id="display" value=""></td>
+            </tr>
+
+            <tr>
+                <td><button type="reset" onclick="reset()" class="button">AC</button></td>
+                <td><button type="button" onclick="addOperator('^')" class="operator">^</button></td>
+                <td><button type="button" onclick="addOperator('√')" class="operator">√</button></td>
+                <td><button type="button" onclick="addOperator('÷')" class="operator">÷</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="addNumber('7')">7</button></td>
+                <td><button type="button" onclick="addNumber('8')">8</button></td>
+                <td><button type="button" onclick="addNumber('9')">9</button></td>
+                <td><button type="button" onclick="addOperator('*')" class="operator">x</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="addNumber('4')">4</button></td>
+                <td><button type="button" onclick="addNumber('5')">5</button></td>
+                <td><button type="button" onclick="addNumber('6')">6</button></td>
+                <td><button type="button" onclick="addOperator('-')" class="operator">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="addNumber('1')">1</button></td>
+                <td><button type="button" onclick="addNumber('2')">2</button></td>
+                <td><button type="button" onclick="addNumber('3')">3</button></td>
+                <td><button type="button" onclick="addOperator('+')" class="operator">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="del()" class="button">⌫</button></td>
+                <td><button type="button" onclick="addNumber('0')">0</button></td>
+                <td><button type="button" onclick="addOperator('.')">.</button></td>
+                <td><button type="submit" onclick="calculate()" class="button">=</button></td>
+            </tr>
+        </tbody>
+      </table>
+</body>
+</html>
